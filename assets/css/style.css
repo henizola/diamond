@@ -6579,6 +6579,11 @@ Pricing Area Style
   color: #ffffff;
 }
 
+.single-pricing-card:hover .pricing-features-list ul li h1,
+.single-pricing-card.active .pricing-features-list ul li h1 {
+  color: #ffffff;
+}
+
 .single-pricing-card:hover .pricing-features-list ul li del,
 .single-pricing-card.active .pricing-features-list ul li del {
   color: #242424;

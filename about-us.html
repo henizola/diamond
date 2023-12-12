@@ -1,1097 +1,676 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <!-- Feather Icons CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.css"
+    />
+    <style>
+      .owl-prev {
+        height: 70px !important;
+        width: 70px !important;
+        filter: grayscale(100%) !important;
+        left: 0;
+        position: absolute;
+        right: 50vw !important;
+        bottom: 40vh !important;
+      }
+      .owl-next {
+        height: 70px !important;
+        width: 70px !important;
+        filter: grayscale(100%) !important;
+        left: 0;
+        position: absolute;
+        left: 50vw !important;
+        bottom: 40vh !important;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-qj0N5e0+cX0uysJQ2SHPTuFIdhxo7W2/O8U+nbCu1rBIMZoSB+rDTXt7HBYdVJDD1SogYLGggWF3U9S9gLbBw=="
+      crossorigin="anonymous"
+    />
+    <!-- Boxicons CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/boxicons/2.0.7/css/boxicons.min.css"
+    />
 
-<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-qj0N5e0+cX0uysJQ2SHPTuFIdhxo7W2/O8U+nbCu1rBIMZoSB+rDTXt7HBYdVJDD1SogYLGggWF3U9S9gLbBw=="
+      crossorigin="anonymous"
+    />
+    <style>
+      .partner-item img {
+        max-width: 100%;
+        max-height: 100%;
+        transition: filter 0.5s;
+      }
 
-<link rel="stylesheet" href="assets/css/meanmenu.css">
+      .partner-item:hover img {
+        filter: none;
+      }
 
-<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+      .grayscale {
+        filter: grayscale(100%);
+      }
+    </style>
 
-<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 
-<link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/meanmenu.css" />
 
-<link rel="stylesheet" href="assets/css/odometer.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
 
-<link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
 
-<link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
 
-<link rel="stylesheet" href="assets/css/dark.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
-<link rel="stylesheet" href="assets/css/responsive.css">
-<title>Vidmo - Movie & Video Production HTML Template</title>
-<link rel="icon" type="image/png" href="assets/images/favicon.png">
-</head>
-<body>
+    <link rel="stylesheet" href="assets/css/odometer.min.css" />
 
-<div id="preloader-section">
-<div id="preloader">
-<div id="ctn-preloader" class="ctn-preloader">
-<div class="animation-preloader">
+    <link rel="stylesheet" href="assets/css/aos.css" />
 
-<div class="spinner"></div>
+    <link rel="stylesheet" href="assets/css/style.css" />
 
-<div class="txt-loading">
-<span data-text-preloader="V " class="letters-loading">V</span>
-<span data-text-preloader="I" class="letters-loading">I</span>
-<span data-text-preloader="D" class="letters-loading">D</span>
-<span data-text-preloader="M" class="letters-loading">M</span>
-<span data-text-preloader="O" class="letters-loading">O</span>
-</div>
+    <link rel="stylesheet" href="assets/css/dark.css" />
 
-</div>
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <title>Diamond Production</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+    <style>
+      * {
+        font-family: "Raleway", sans-serif !important;
+      }
+    </style>
 
-<div class="loader-section section-left"></div>
-<div class="loader-section section-right"></div>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  </head>
 
-</div>
-</div>
-</div>
+  <body>
+    <div id="preloader-section">
+      <div id="preloader">
+        <div id="ctn-preloader" class="ctn-preloader">
+          <div class="animation-preloader">
+            <div class="spinner"></div>
 
+            <div class="txt-loading">
+              <span data-text-preloader="D " class="letters-loading">D</span>
+              <span data-text-preloader="I" class="letters-loading">I</span>
+              <span data-text-preloader="A" class="letters-loading">A</span>
+              <span data-text-preloader="M" class="letters-loading">M</span>
+              <span data-text-preloader="O" class="letters-loading">O</span>
+              <span data-text-preloader="N" class="letters-loading">N</span>
+              <span data-text-preloader="D" class="letters-loading">D</span>
+            </div>
+          </div>
 
-<div class="navbar-area">
-<div class="mobile-responsive-nav">
-<div class="container">
-<div class="mobile-responsive-menu">
-<div class="logo">
-<a href="index.html">
-<img src="assets/images/logo.png" class="main-logo" alt="logo">
-<img src="assets/images/white-logo.png" class="white-logo" alt="logo">
-</a>
-</div>
-</div>
-</div>
-</div>
-<div class="desktop-nav">
-<div class="container-fluid">
-<nav class="navbar navbar-expand-md navbar-light">
-<a class="navbar-brand" href="index.html">
-<img src="assets/images/logo.png" class="main-logo" alt="logo">
-<img src="assets/images/white-logo.png" class="white-logo" alt="logo">
-</a>
-<div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
-<ul class="navbar-nav ms-auto">
-<li class="nav-item">
-<a href="#" class="nav-link dropdown-toggle">
-Home
-</a>
-<ul class="dropdown-menu">
-<li class="nav-item">
-<a href="index.html" class="nav-link">Home One</a>
-</li>
-<li class="nav-item">
-<a href="index-2.html" class="nav-link">Home Two</a>
-</li>
-<li class="nav-item">
-<a href="index-3.html" class="nav-link">Home Three</a>
-</li>
-</ul>
-</li>
-<li class="nav-item">
-<a href="about-us.html" class="nav-link active">About Us</a>
-</li>
-<li class="nav-item">
-<a href="#" class="nav-link dropdown-toggle">
-Pages
-</a>
-<ul class="dropdown-menu">
-<li class="nav-item">
-<a href="#" class="nav-link dropdown-toggle">
-Team
-</a>
-<ul class="dropdown-menu">
-<li class="nav-item">
-<a href="team-style-one.html" class="nav-link">Team Style One</a>
-</li>
-<li class="nav-item">
-<a href="team-style-two.html" class="nav-link">Team Style Two</a>
-</li>
-<li class="nav-item">
-<a href="team-style-three.html" class="nav-link">Team Style Three</a>
-</li>
-</ul>
-</li>
-<li class="nav-item">
-<a href="#" class="nav-link dropdown-toggle">
-Works
-</a>
-<ul class="dropdown-menu">
-<li class="nav-item">
-<a href="works.html" class="nav-link">Works</a>
-</li>
-<li class="nav-item">
-<a href="works-details.html" class="nav-link">Works Details</a>
-</li>
-</ul>
-</li>
-<li class="nav-item">
-<a href="#" class="nav-link dropdown-toggle">
-Video
-</a>
-<ul class="dropdown-menu">
-<li class="nav-item">
-<a href="video.html" class="nav-link">Video</a>
-</li>
-<li class="nav-item">
-<a href="video-details.html" class="nav-link">Video Details</a>
-</li>
-</ul>
-</li>
-<li class="nav-item">
-<a href="pricing.html" class="nav-link">Pricing</a>
-</li>
-<li class="nav-item">
-<a href="testimonials.html" class="nav-link">Testimonials</a>
-</li>
-<li class="nav-item">
-<a href="faq.html" class="nav-link">FAQ</a>
-</li>
-<li class="nav-item">
-<a href="#" class="nav-link dropdown-toggle">
-Users
-</a>
-<ul class="dropdown-menu">
-<li class="nav-item">
-<a href="login.html" class="nav-link">Login</a>
-</li>
-<li class="nav-item">
-<a href="register.html" class="nav-link">Register</a>
-</li>
-<li class="nav-item">
-<a href="recover-password.html" class="nav-link">Recover Password</a>
-</li>
-</ul>
-</li>
-<li class="nav-item">
-<a href="privacy-policy.html" class="nav-link">Privacy Policy</a>
-</li>
-<li class="nav-item">
-<a href="terms-conditions.html" class="nav-link">Terms And Conditions</a>
-</li>
-<li class="nav-item">
-<a href="coming-soon.html" class="nav-link">Coming Soon</a>
-</li>
-<li class="nav-item">
-<a href="404.html" class="nav-link">404 Page</a>
-</li>
-</ul>
-</li>
-<li class="nav-item">
-<a href="#" class="nav-link dropdown-toggle">
-Blog
-</a>
-<ul class="dropdown-menu">
-<li class="nav-item">
-<a href="blog-grid.html" class="nav-link">Blog Grid</a>
-</li>
-<li class="nav-item">
-<a href="blog-right-sidebar.html" class="nav-link">Blog Right Sidebar</a>
-</li>
-<li class="nav-item">
-<a href="blog-details.html" class="nav-link">Blog Details</a>
-</li>
-</ul>
-</li>
-<li class="nav-item">
-<a href="contact-us.html" class="nav-link">Contact Us</a>
-</li>
-</ul>
-<div class="others-options">
-<div class="option-item">
-<div class="search-btn">
-<a class="#" href="#searchmodal" data-bs-toggle="modal" data-bs-target="#searchmodal">
-<i class="fa-solid fa-magnifying-glass"></i>
-</a>
-</div>
-</div>
-<div class="option-item">
-<div class="sidebar-btn">
-<div class="sidebar-menu" data-bs-toggle="modal" data-bs-target="#sidebarModal"></div>
-</div>
-</div>
-<div class="option-item">
-<div class="switch-box">
-<label id="switch" class="switch">
-<input type="checkbox" onchange="toggleTheme()" id="slider">
-<span class="slider round"></span>
-</label>
-</div>
-</div>
-</div>
-</div>
-</nav>
-</div>
-</div>
-<div class="others-option-for-responsive">
-<div class="container">
-<div class="dot-menu">
-<div class="inner">
-<div class="others-options ms-auto">
-<div class="option-item">
-<div class="search-btn">
-<a class="#" href="#searchmodal" data-bs-toggle="modal" data-bs-target="#searchmodal">
-<i class="fa-solid fa-magnifying-glass"></i>
-</a>
-</div>
-</div>
-<div class="option-item">
-<div class="sidebar-btn">
-<div class="sidebar-menu" data-bs-toggle="modal" data-bs-target="#sidebarModal"></div>
-</div>
-</div>
-<div class="option-item">
-<div class="switch-box">
-<label id="switch2" class="switch">
-<input type="checkbox" onchange="toggleTheme()" id="slider2">
-<span class="slider round"></span>
-</label>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+          <div class="loader-section section-left"></div>
+          <div class="loader-section section-right"></div>
+        </div>
+      </div>
+    </div>
 
+    <div class="navbar-area style2">
+      <div class="mobile-responsive-nav">
+        <div class="container">
+          <div class="mobile-responsive-menu">
+            <div class="logo">
+              <a href="index.html">
+                <img
+                  style="max-height: 40px; margin-left: 5vw"
+                  src="assets/images/white-logo.png"
+                  alt="logo"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="desktop-nav">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-md navbar-light">
+            <a class="navbar-brand" href="index.html">
+              <img
+                style="max-height: 40px; margin-left: 5vw"
+                src="assets/images/white-logo.png"
+                alt="logo"
+              />
+            </a>
+            <div
+              class="collapse navbar-collapse mean-menu"
+              id="navbarSupportedContent"
+            >
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a href="/index.html" class="nav-link dropdown-toggle active">
+                  Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/about-us.html" class="nav-link">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="/services.html" class="nav-link dropdown-toggle">
+                  Services
+                </a>
+              </li>
 
-<div class="modal fade fade-scale searchmodal" id="searchmodal" tabindex="-1" role="dialog">
-<div class="modal-dialog" role="document">
-<div class="modal-content">
-<div class="modal-header">
-<button type="button" class="close" data-bs-dismiss="modal">
-<i class="fa-solid fa-xmark"></i>
-</button>
-</div>
-<div class="modal-body">
-<form class="modal-search-form">
-<input type="search" class="search-field" placeholder="Search...">
-<button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-</form>
-</div>
-</div>
-</div>
-</div>
+              <li class="nav-item">
+                <a href="/contact-us.html" class="nav-link">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Diamond Casting</a>
+              </li>
+            </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="others-option-for-responsive">
+        <div class="container">
+          <div class="dot-menu">
+            <div class="inner">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div
+      class="modal fade fade-scale searchmodal"
+      id="searchmodal"
+      tabindex="-1"
+      role="dialog"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-bs-dismiss="modal">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form class="modal-search-form">
+              <input
+                type="search"
+                class="search-field"
+                placeholder="Search..."
+              />
+              <button type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<div class="sidebarModal modal right fade" id="sidebarModal" tabindex="-1" role="dialog">
-<div class="modal-dialog" role="document">
-<div class="modal-content">
-<button type="button" class="close" data-bs-dismiss="modal"> <i class="fa-solid fa-xmark"></i></button>
-<div class="modal-body">
-<a href="index.html">
-<img src="assets/images/white-logo.png" alt="logo">
-</a>
-<div class="sidebar-content">
-<h3>About Us</h3>
-<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-</div>
-<div class="sidebar-contact-info">
-<h3>Contact Information</h3>
-<ul class="info-list">
-<li><i class="fa-solid fa-phone"></i> <a href="tel:9901234567">+990-123-4567</a></li>
-<li><i class="fa-regular fa-envelope"></i><a href="../../cdn-cgi/l/email-protection.html#58303d3434371835393439763b3735"><span class="__cf_email__" data-cfemail="7d15181111123d0b14191012531e1210">[email&#160;protected]</span></a></li>
-<li><i class="fa-regular fa-location-dot"></i> 413 North Las Vegas, NV 89032</li>
-</ul>
-</div>
-<ul class="sidebar-social-list">
-<li>
-<a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-</li>
-<li>
-<a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-</li>
-<li>
-<a href="https://linkedin.com/?lang=en" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-</li>
-<li>
-<a href="https://instagram.com/?lang=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
+    <div
+      class="sidebarModal modal right fade"
+      id="sidebarModal"
+      tabindex="-1"
+      role="dialog"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <button type="button" class="close" data-bs-dismiss="modal">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <div class="modal-body">
+            <a href="index.html">
+              <img src="assets/images/white-logo.png" alt="logo" />
+            </a>
+            <div class="sidebar-content">
+              <h3>About Us</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipiscing elit sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+            <div class="sidebar-contact-info">
+              <h3>Contact Information</h3>
+              <ul class="info-list">
+                <li>
+                  <i class="fa-solid fa-phone"></i>
+                  <a href="tel:9901234567">+990-123-4567</a>
+                </li>
+                <li>
+                  <i class="fa-regular fa-envelope"></i
+                  ><a
+                    href="../../cdn-cgi/l/email-protection.html#58303d3434371835393439763b3735"
+                    ><span
+                      class="__cf_email__"
+                      data-cfemail="7d15181111123d0b14191012531e1210"
+                      >[email&#160;protected]</span
+                    ></a
+                  >
+                </li>
+                <li>
+                  <i class="fa-regular fa-location-dot"></i> 413 North Las
+                  Vegas, NV 89032
+                </li>
+              </ul>
+            </div>
+            <ul class="sidebar-social-list">
+              <li>
+                <a href="https://www.facebook.com" target="_blank"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.twitter.com" target="_blank"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/?lang=en" target="_blank"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://instagram.com/?lang=en" target="_blank"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div class="page-banner-area bg-1 jarallax" data-jarallax='{"speed": 0.3}'>
+      <div class="container">
+        <div class="page-banner-content">
+          <h1>About Us</h1>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>About Us</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-<div class="page-banner-area bg-1 jarallax" data-jarallax="{&quot;speed&quot;: 0.3}">
-<div class="container">
-<div class="page-banner-content">
-<h1>About Us</h1>
-<ul>
-<li><a href="index.html">Home</a></li>
-<li>About Us</li>
-</ul>
-</div>
-</div>
-</div>
+    <div class="helps-area bg-f8f8f8 ptb-100">
+      <div class="container">
+        <div class="help-content">
+          <div class="section-title">
+            <h2>Who We Are</h2>
+          </div>
+          <p class="text-center">
+            Since launching our compan in 2022, Diamond Production PLC is a
+            company offering diversified service in Advertising, Branding,
+            Communications, Media Placement & monitoring, digital marketing,
+            campaign management as well related spectrum of works.
+          </p>
+          <p class="text-center">
+            Our company has now expanded with a larger scale to be dependable
+            enough, providing the best talent, creativity, technology and
+            digital innovation to our clients.
+          </p>
+          <p>
+            We are looking to the future, as we stay focused in delivering
+            creative efficient and cost-effective solutions for your company, by
+            being committed to create an exceptional and remarkable strategy
+            that will make your brand outshine from the crowd.
+          </p>
+        </div>
+        <div class="shape">
+          <img
+            src="assets/images/help/help-shape-1.png"
+            class="shape1"
+            alt="Image"
+          />
+          <img
+            src="assets/images/help/help-shape-2.png"
+            class="shape2"
+            alt="Image"
+          />
+        </div>
+      </div>
+    </div>
 
+    <div class="pricing-area pt-100 pb-70">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-sm-6">
+            <div
+              class="single-pricing-card"
+              style="height: 416px; margin-top: 100px"
+            >
+              <div class="pricing-top-content">
+                <div class="icon">
+                  <img
+                    src="assets/images/pricing/mission.png"
+                    style="width: 100px"
+                    alt="Image"
+                  />
+                </div>
+                <h1>MISSION</h1>
+              </div>
 
-<div class="about-area ptb-100">
-<div class="container">
-<div class="row align-items-center">
-<div class="col-lg-6">
-<div class="about-img pr-15">
-<img src="assets/images/about/about-img-2.jpg" alt="Image">
-<div class="small-img">
-<img src="assets/images/about/about-img-3.jpg" alt="Image">
-</div>
-</div>
-</div>
-<div class="col-lg-6">
-<div class="about-content pl-15">
-<div class="about-title">
-<span>About Us</span>
-<h2>Our Movie Industry Is Popular All Over The World</h2>
-</div>
-<div class="experience">
-<span>25</span>
-<p>Years Of Experience In Flim & Movie Studio</p>
-</div>
-<div class="content">
-<p>But I must explain to you how all this mistaken idea of denouncing aitems pleash4ure apraising pain was born and I will give you a complete acexthe actte chings of the great explorer of the truth, the master-builder</p>
-<p>Of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue</p>
-</div>
-<a href="about-us.html" class="default-btn btn">Read More <i class="fa-solid fa-arrow-right-long"></i></a>
-</div>
-</div>
-</div>
-</div>
-</div>
+              <div class="pricing-features-list" style="padding: 0 30px">
+                <ul>
+                  <li>
+                    To delver exceptional advertising and branding solutions to
+                    our clients by employing strategic thinking, bold ideas,
+                    flawless execution, and utilizing cutting edge technologies,
+                    working with highly creative teams.
+                  </li>
+                </ul>
+              </div>
 
+              <div class="shape">
+                <img src="assets/images/pricing/pricing-2.png" alt="Image" />
+              </div>
+            </div>
+          </div>
 
-<div class="features-area bg-f5f5f5 pt-100 pb-70">
-<div class="container">
-<div class="section-title">
-<span>Our Features</span>
-<h2>What We Do Movie Production </h2>
-</div>
-<div class="row">
-<div class="col-lg-3 col-sm-6">
-<div class="single-features-card">
-<div class="features-img">
-<img src="assets/images/features/features-img-1.png" alt="Image">
-</div>
-<h3>Content Production</h3>
-<p>Contrary to popular belieors not simply rand It hace of lassica literature from making</p>
-</div>
-</div>
-<div class="col-lg-3 col-sm-6">
-<div class="single-features-card">
-<div class="features-img">
-<img src="assets/images/features/features-img-2.png" alt="Image">
-</div>
-<h3>Film Production</h3>
-<p>Contrary to popular belieors not simply rand It hace of lassica literature from making</p>
-</div>
-</div>
-<div class="col-lg-3 col-sm-6">
-<div class="single-features-card">
-<div class="features-img">
-<img src="assets/images/features/features-img-2.png" alt="Image">
-</div>
-<h3>Creative Direction</h3>
-<p>Contrary to popular belieors not simply rand It hace of lassica literature from making</p>
-</div>
-</div>
-<div class="col-lg-3 col-sm-6">
-<div class="single-features-card">
-<div class="features-img">
-<img src="assets/images/features/features-img-3.png" alt="Image">
-</div>
-<h3>Video Solution</h3>
-<p>Contrary to popular belieors not simply rand It hace of lassica literature from making</p>
-</div>
-</div>
-</div>
-</div>
-</div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="single-pricing-card">
+              <div class="pricing-top-content">
+                <div class="icon">
+                  <img
+                    style="width: 100px"
+                    src="assets/images/pricing/values.png"
+                    alt="Image"
+                  />
+                </div>
+                <h1>Core Value</h1>
+              </div>
 
+              <div class="pricing-features-list" style="padding: 0 30px">
+                <ul style="width: fit-content; margin: 0 auto">
+                  <li style="display: flex; align-items: flex-end">
+                    <h1 style="font-size: 27px">D</h1>
+                    <span style="padding-bottom: 10px">ynamic</span>
+                  </li>
+                  <li style="display: flex; align-items: flex-end">
+                    <h1 style="font-size: 27px">I</h1>
+                    <span style="padding-bottom: 10px"> nnovative</span>
+                  </li>
+                  <li style="display: flex; align-items: flex-end">
+                    <h1 style="font-size: 27px">A</h1>
+                    <span style="padding-bottom: 10px">uthentic</span>
+                  </li>
+                  <li style="display: flex; align-items: flex-end">
+                    <h1 style="font-size: 27px">M</h1>
+                    <span style="padding-bottom: 10px">odern</span>
+                  </li>
+                  <li style="display: flex; align-items: flex-end">
+                    <h1 style="font-size: 27px">O</h1>
+                    <span style="padding-bottom: 10px">riginality</span>
+                  </li>
+                  <li style="display: flex; align-items: flex-end">
+                    <h1 style="font-size: 27px">N</h1>
+                    <span style="padding-bottom: 10px">ovel</span>
+                  </li>
+                  <li style="display: flex; align-items: flex-end">
+                    <h1 style="font-size: 27px"><span>D</span></h1>
+                    <span style="padding-bottom: 10px">esired Result</span>
+                  </li>
+                </ul>
+              </div>
 
-<div class="trailer-area-style2 bg-color ptb-100">
-<div class="container">
-<div class="section-title white-title">
-<span>Upcoming Movie Trailer</span>
-<h2>Trailer Perry’s Madea</h2>
-</div>
-<div class="trailer-slider2 owl-carousel owl-theme">
-<div class="single-trailer-box">
-<div class="trailor-img">
-<img src="assets/images/trailer/trailer-img-7.jpg" alt="Image">
-</div>
-<div class="content">
-<h3>Gotham</h3>
-<span>Comedy, Drama, Thriller</span>
-</div>
-</div>
-<div class="single-trailer-box">
-<div class="trailor-img">
-<img src="assets/images/trailer/trailer-img-8.jpg" alt="Image">
-</div>
-<div class="content">
-<h3>Stranger Things</h3>
-<span>Comedy, Drama, Thriller</span>
-</div>
-</div>
-<div class="single-trailer-box">
-<div class="trailor-img">
-<img src="assets/images/trailer/trailer-img-9.jpg" alt="Image">
-</div>
-<div class="content">
-<h3>Homecoming</h3>
-<span>Comedy, Drama, Thriller</span>
-</div>
-</div>
-<div class="single-trailer-box">
-<div class="trailor-img">
-<img src="assets/images/trailer/trailer-img-10.jpg" alt="Image">
-</div>
-<div class="content">
-<h3>The Injustice</h3>
-<span>Comedy, Drama, Thriller</span>
-</div>
-</div>
-<div class="single-trailer-box">
-<div class="trailor-img">
-<img src="assets/images/trailer/trailer-img-7.jpg" alt="Image">
-</div>
-<div class="content">
-<h3>Gotham</h3>
-<span>Comedy, Drama, Thriller</span>
-</div>
-</div>
-<div class="single-trailer-box">
-<div class="trailor-img">
-<img src="assets/images/trailer/trailer-img-8.jpg" alt="Image">
-</div>
-<div class="content">
-<h3>Stranger Things</h3>
-<span>Comedy, Drama, Thriller</span>
-</div>
-</div>
-<div class="single-trailer-box">
-<div class="trailor-img">
-<img src="assets/images/trailer/trailer-img-9.jpg" alt="Image">
-</div>
-<div class="content">
-<h3>Homecoming</h3>
-<span>Comedy, Drama, Thriller</span>
-</div>
-</div>
-<div class="single-trailer-box">
-<div class="trailor-img">
-<img src="assets/images/trailer/trailer-img-10.jpg" alt="Image">
-</div>
-<div class="content">
-<h3>The Injustice</h3>
-<span>Comedy, Drama, Thriller</span>
-</div>
-</div>
-<div class="single-trailer-box">
-<div class="trailor-img">
-<img src="assets/images/trailer/trailer-img-7.jpg" alt="Image">
-</div>
-<div class="content">
-<h3>Gotham</h3>
-<span>Comedy, Drama, Thriller</span>
-</div>
-</div>
-<div class="single-trailer-box">
-<div class="trailor-img">
-<img src="assets/images/trailer/trailer-img-8.jpg" alt="Image">
-</div>
-<div class="content">
-<h3>Stranger Things</h3>
-<span>Comedy, Drama, Thriller</span>
-</div>
-</div>
-<div class="single-trailer-box">
-<div class="trailor-img">
-<img src="assets/images/trailer/trailer-img-9.jpg" alt="Image">
-</div>
-<div class="content">
-<h3>Homecoming</h3>
-<span>Comedy, Drama, Thriller</span>
-</div>
-</div>
-<div class="single-trailer-box">
-<div class="trailor-img">
-<img src="assets/images/trailer/trailer-img-10.jpg" alt="Image">
-</div>
-<div class="content">
-<h3>The Injustice</h3>
-<span>Comedy, Drama, Thriller</span>
-</div>
-</div>
-<div class="single-trailer-box">
-<div class="trailor-img">
-<img src="assets/images/trailer/trailer-img-8.jpg" alt="Image">
-</div>
-<div class="content">
-<h3>Stranger Things</h3>
-<span>Comedy, Drama, Thriller</span>
-</div>
-</div>
-</div>
-</div>
-</div>
+              <div class="shape">
+                <img src="assets/images/pricing/pricing-2.png" alt="Image" />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div
+              class="single-pricing-card"
+              style="height: 416px; margin-top: 100px"
+            >
+              <div class="pricing-top-content">
+                <div class="icon">
+                  <img
+                    style="width: 100px"
+                    src="assets/images/pricing/vision.png"
+                    alt="Image"
+                  />
+                </div>
+                <h1>VISION</h1>
+              </div>
+
+              <div class="pricing-features-list" style="padding: 0 30px">
+                <ul>
+                  <li>
+                    To be the most preferred production company in East Africa.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="shape">
+                <img src="assets/images/pricing/pricing-2.png" alt="Image" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="features-area bg-f5f5f5 pt-100 pb-70">
+      <div class="container">
+        <div class="section-title">
+          <h2>Our Team</h2>
+        </div>
+        <div class="row">
+          <p style="padding: 0 10vw" class="text-center">
+            Having team with diverse skill sats and expertise can help to bring
+            innovetive ideas to the production process, resulting in a final
+            product thet stands out from the competttion. We have qualified team
+            with diverse sklls, expertise, and experience, who has an abllity to
+            understand the client's need and the industry they aperate for
+            delivering a successful production autout that exceeds clients'
+            expectations
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="history-area ptb-100">
+      <div class="container">
+        <h1 class="text-center" style="margin-bottom: 100px">OUR GEARS</h1>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="history-content-style2 pr-15">
+              <div class="history-title">
+                <h3>RED Komodo 6k</h3>
+              </div>
+              <p>
+                We have RED Komodo, a high-end cinema camera that shoots 6K
+                video, and has a built-in touchscreen display. It's best for
+                high-quality footage and state of the Art lighting and other
+                video production materials.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="history-img-content-style2" style="padding-left:0!important">
+              <img src="assets/images/history/history-img-2.jpg" alt="Image" style="width:100%" />
+            </div>
+          </div>
+
+          
+          </div>
+        </div>
+      </div>
+    </div>
 
 
-<div class="history-area ptb-100">
-<div class="container">
-<div class="row">
-<div class="col-lg-6">
-<div class="history-content-style2 pr-15">
-<div class="history-title">
-<span>History</span>
-<h2>Learn Something About Our Movei History</h2>
-</div>
-<div class="row scrollmenu">
-<div class="history-box">
-<div class="row align-items-center">
-<div class="col-lg-3 col-sm-4">
-<div class="card-left-content">
-<h4>Since</h4>
-<span>1950 - 1957</span>
-</div>
-</div>
-<div class="col-lg-9 col-sm-8">
-<div class="card-right-content">
-<h3>Drema Movie</h3>
-<p>But I must explain to you how all this mistaken ienouncing pleasure and praising pain was born you a complete</p>
-</div>
-</div>
-</div>
-</div>
-<div class="history-box">
-<div class="row align-items-center">
-<div class="col-lg-3 col-sm-4">
-<div class="card-left-content">
-<h4>Since</h4>
-<span>1957 - 1967</span>
-</div>
-</div>
-<div class="col-lg-9 col-sm-8">
-<div class="card-right-content">
-<h3>Short Films</h3>
-<p>But I must explain to you how all this mistaken ienouncing pleasure and praising pain was born you a complete</p>
-</div>
-</div>
-</div>
-</div>
-<div class="history-box">
-<div class="row align-items-center">
-<div class="col-lg-3 col-sm-4">
-<div class="card-left-content">
-<h4>Since</h4>
-<span>1967 - 1977</span>
-</div>
-</div>
-<div class="col-lg-9 col-sm-8">
-<div class="card-right-content">
-<h3>Drema Movie</h3>
-<p>But I must explain to you how all this mistaken ienouncing pleasure and praising pain was born you a complete</p>
-</div>
-</div>
-</div>
-</div>
-<div class="history-box">
-<div class="row align-items-center">
-<div class="col-lg-3 col-sm-4">
-<div class="card-left-content">
-<h4>Since</h4>
-<span>1977 - 1982</span>
-</div>
-</div>
-<div class="col-lg-9 col-sm-8">
-<div class="card-right-content">
-<h3>Short Films</h3>
-<p>But I must explain to you how all this mistaken ienouncing pleasure and praising pain was born you a complete</p>
-</div>
-</div>
-</div>
-</div>
-<div class="history-box">
-<div class="row align-items-center">
-<div class="col-lg-3 col-sm-4">
-<div class="card-left-content">
-<h4>Since</h4>
-<span>1983 - 1987</span>
-</div>
-</div>
-<div class="col-lg-9 col-sm-8">
-<div class="card-right-content">
-<h3>Drema Movie</h3>
-<p>But I must explain to you how all this mistaken ienouncing pleasure and praising pain was born you a complete</p>
-</div>
-</div>
-</div>
-</div>
-<div class="history-box">
-<div class="row align-items-center">
-<div class="col-lg-3 col-sm-4">
-<div class="card-left-content">
-<h4>Since</h4>
-<span>1987 - 1997</span>
-</div>
-</div>
-<div class="col-lg-9 col-sm-8">
-<div class="card-right-content">
-<h3>Short Films</h3>
-<p>But I must explain to you how all this mistaken ienouncing pleasure and praising pain was born you a complete</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-6">
-<div class="history-img-content-style2">
-<img src="assets/images/history/history-img-2.jpg" alt="Image">
-<div class="small-img">
-<img src="assets/images/history/history-img-3.png" alt="Image">
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 
+    <div class="footer-area pt-100 pb-70" style="margin-top: 100px">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-sm-6">
+            <div class="single-footer-widget logo-area">
+              <div class="logo">
+                <a href="index.html"
+                  ><img
+                    style="max-height: 40px; margin-left: 5vw"
+                    src="assets/images/white-logo.png"
+                    alt="Image"
+                /></a>
+              </div>
+              <div class="social-content">
+                <ul>
+                  <li>
+                    <a href="https://www.facebook.com" target="_blank"
+                      ><i data-feather="facebook"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://www.twitter.com" target="_blank"
+                      ><i data-feather="twitter"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://linkedin.com/?lang=en" target="_blank"
+                      ><i data-feather="linkedin"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://instagram.com/?lang=en" target="_blank"
+                      ><i data-feather="instagram"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="single-footer-widget quick-links">
+              <h3>Quick Links</h3>
+                  <ul>
+                <li>
+                  <a href="./about-us.html">About Us</a>
+                </li>
 
-<div class="testimonials-area bg-f8f8f8 ptb-100">
-<div class="container">
-<div class="section-title style2">
-<span>Our Testimonials</span>
-<h2>Our Clients Lattest Reviews</h2>
-</div>
-<div class="testimonial-slider2 owl-carousel owl-theme">
-<div class="single-testimonials-box">
-<div class="top-content">
-<div class="row">
-<div class="col-lg-6 col-sm-6">
-<div class="client-info">
-<h3>Marvin Gardens</h3>
-<span>CEO - Founder</span>
-</div>
-</div>
-<div class="col-lg-6 col-sm-6">
-<div class="ratings">
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-</div>
-</div>
-</div>
-</div>
-<p>But I must explain to you how all this mistaken idea of denou pleasure and praising pain was born and I will give you a compacco unt of the system, and expound the actual teachings</p>
-<div class="quote">
-<img src="assets/images/testimonials/testimonial-shape-1.png" alt="Shape">
-</div>
-</div>
-<div class="single-testimonials-box">
-<div class="top-content">
-<div class="row">
-<div class="col-lg-6 col-sm-6">
-<div class="client-info">
-<h3>Mary Christmas</h3>
-<span>Manager</span>
-</div>
-</div>
-<div class="col-lg-6 col-sm-6">
-<div class="ratings">
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-</div>
-</div>
-</div>
-</div>
-<p>But I must explain to you how all this mistaken idea of denou pleasure and praising pain was born and I will give you a compacco unt of the system, and expound the actual teachings</p>
-<div class="quote">
-<img src="assets/images/testimonials/testimonial-shape-1.png" alt="Shape">
-</div>
-</div>
-<div class="single-testimonials-box">
-<div class="top-content">
-<div class="row">
-<div class="col-lg-6 col-sm-6">
-<div class="client-info">
-<h3>Marvin Gardens</h3>
-<span>CEO - Founder</span>
-</div>
-</div>
-<div class="col-lg-6 col-sm-6">
-<div class="ratings">
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-</div>
-</div>
-</div>
-</div>
-<p>But I must explain to you how all this mistaken idea of denou pleasure and praising pain was born and I will give you a compacco unt of the system, and expound the actual teachings</p>
-<div class="quote">
-<img src="assets/images/testimonials/testimonial-shape-1.png" alt="Shape">
-</div>
-</div>
-<div class="single-testimonials-box">
-<div class="top-content">
-<div class="row">
-<div class="col-lg-6 col-sm-6">
-<div class="client-info">
-<h3>Mary Christmas</h3>
-<span>Manager</span>
-</div>
-</div>
-<div class="col-lg-6 col-sm-6">
-<div class="ratings">
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-</div>
-</div>
-</div>
-</div>
-<p>But I must explain to you how all this mistaken idea of denou pleasure and praising pain was born and I will give you a compacco unt of the system, and expound the actual teachings</p>
-<div class="quote">
-<img src="assets/images/testimonials/testimonial-shape-1.png" alt="Shape">
-</div>
-</div>
-</div>
-</div>
-</div>
+                <li>
+                  <a href="./contact-us.html">Contact</a>
+                </li>
+                <li>
+                  <a href="./services.html">Services</a>
+                </li>
+              </ul>
+            </div>
+          </div>
 
+          <div class="col-lg-4 col-sm-6">
+            <div class="single-footer-widget get-in-touch">
+              <h3>Get In Touch</h3>
+              <ul>
+                <li style="display: flex; padding-left: 0">
+                  <i
+                    data-feather="phone"
+                    style="color: #fff; margin-right: 10px !important"
+                  ></i>
 
-<div class="team-area ptb-100">
-<div class="container">
-<div class="section-title">
-<span>Flims & Movie Maker</span>
-<h2>Meet The Directors</h2>
-</div>
-<div class="team-slider owl-carousel owl-theme">
-<div class="single-team-card">
-<div class="team-img">
-<img src="assets/images/team/team-img-1.jpg" alt="Image">
-</div>
-<div class="team-content">
-<h3>Frank Senbeans</h3>
-<span>Driector</span>
-<div class="social-content">
-<ul>
-<li>
-<a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-</li>
-<li>
-<a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-</li>
-<li>
-<a href="https://linkedin.com/?lang=en" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-</li>
-<li>
-<a href="https://instagram.com/?lang=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="single-team-card">
-<div class="team-img">
-<img src="assets/images/team/team-img-2.jpg" alt="Image">
-</div>
-<div class="team-content">
-<h3>Juan Soponatime</h3>
-<span>Sub Driector</span>
-<div class="social-content">
-<ul>
-<li>
-<a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-</li>
-<li>
-<a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-</li>
-<li>
-<a href="https://linkedin.com/?lang=en" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-</li>
-<li>
-<a href="https://instagram.com/?lang=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="single-team-card">
-<div class="team-img">
-<img src="assets/images/team/team-img-3.jpg" alt="Image">
-</div>
-<div class="team-content">
-<h3>Carrie R. Pigeon</h3>
-<span>Actor</span>
-<div class="social-content">
-<ul>
-<li>
-<a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-</li>
-<li>
-<a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-</li>
-<li>
-<a href="https://linkedin.com/?lang=en" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-</li>
-<li>
-<a href="https://instagram.com/?lang=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="single-team-card">
-<div class="team-img">
-<img src="assets/images/team/team-img-4.jpg" alt="Image">
-</div>
-<div class="team-content">
-<h3>Aaron Spacemuseum</h3>
-<span>Manager</span>
-<div class="social-content">
-<ul>
-<li>
-<a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-</li>
-<li>
-<a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-</li>
-<li>
-<a href="https://linkedin.com/?lang=en" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-</li>
-<li>
-<a href="https://instagram.com/?lang=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="single-team-card">
-<div class="team-img">
-<img src="assets/images/team/team-img-1.jpg" alt="Image">
-</div>
-<div class="team-content">
-<h3>Frank Senbeans</h3>
-<span>Driector</span>
-<div class="social-content">
-<ul>
-<li>
-<a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-</li>
-<li>
-<a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-</li>
-<li>
-<a href="https://linkedin.com/?lang=en" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-</li>
-<li>
-<a href="https://instagram.com/?lang=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+                  <span>Phone</span>
+                  <a style="margin-left: 15px" href="tel:0114628535"
+                    >0114628535</a
+                  >
+                </li>
+                <li style="display: flex; padding-left: 0">
+                  <i
+                    data-feather="mail"
+                    style="color: #fff; margin-right: 10px !important"
+                  ></i>
+                  <span>Email</span>
+                  <a style="margin-left: 15px" href="tel:0114628535"
+                    >diamondproductionD@gmail.com
+</a
+                  >
+                </li>
+                <li style="display: flex; padding-left: 0">
+                  <i
+                    data-feather="map-pin"
+                    style="color: #fff; margin-right: 10px !important"
+                  ></i>
+                  <span>Address </span>
+                  <a style="margin-left: 15px" href="tel:0114628535"
+                    >Addis Ababa, Ethiopia Bole  Mesqel flower James bld.9th floor</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="shape">
+          <img
+            src="assets/images/instagram/shape.png"
+            class="shape-1"
+            alt="Image"
+          />
+          <img
+            src="assets/images/instagram/shape.png"
+            class="shape-2"
+            alt="Image"
+          />
+        </div>
+      </div>
+    </div>
 
+    <div class="copy-right-area">
+      <div class="container">
+        <p>© <span>Diamond Production</span></p>
+      </div>
+    </div>
 
-<div class="footer-area pt-100 pb-70">
-<div class="container">
-<div class="row">
-<div class="col-lg-3 col-sm-6">
-<div class="single-footer-widget logo-area">
-<div class="logo">
-<a href="index.html"><img src="assets/images/white-logo.png" alt="Image"></a>
-</div>
-<p>On the other hand, we denounce whteous indignation and dislike men wh beguiled and demoralized er hand, we denounce whteous indignation and dislike </p>
-<div class="social-content">
-<ul>
-<li>
-<a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-</li>
-<li>
-<a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-</li>
-<li>
-<a href="https://linkedin.com/?lang=en" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-</li>
-<li>
-<a href="https://instagram.com/?lang=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="col-lg-3 col-sm-6">
-<div class="single-footer-widget quick-links">
-<h3>Quick Links</h3>
-<ul>
-<li>
-<i class="fa-solid fa-arrow-right"></i>
-<a href="about-us.html">About Us</a>
-</li>
-<li>
-<i class="fa-solid fa-arrow-right"></i>
-<a href="works.html">Works</a>
-</li>
-<li>
-<i class="fa-solid fa-arrow-right"></i>
-<a href="video.html">Videos</a>
-</li>
-<li>
-<i class="fa-solid fa-arrow-right"></i>
-<a href="blog-grid.html">Blog</a>
-</li>
-<li>
-<i class="fa-solid fa-arrow-right"></i>
-<a href="contact-us.html">Contact</a>
-</li>
-</ul>
-</div>
-</div>
-<div class="col-lg-3 col-sm-6">
-<div class="single-footer-widget instagram-content">
-<h3>Instagram</h3>
-<div class="row g-0">
-<div class="col-4">
-<div class="single-instagram-box">
-<img src="assets/images/instagram/instagram-img-1.jpg" alt="Image">
-<a href="https://instagram.com/?lang=en" target="_blank">
-<i class="fa-brands fa-instagram"></i>
-</a>
-</div>
-</div>
-<div class="col-4">
-<div class="single-instagram-box">
-<img src="assets/images/instagram/instagram-img-2.jpg" alt="Image">
-<a href="https://instagram.com/?lang=en" target="_blank">
-<i class="fa-brands fa-instagram"></i>
-</a>
-</div>
-</div>
-<div class="col-4">
-<div class="single-instagram-box">
-<img src="assets/images/instagram/instagram-img-3.jpg" alt="Image">
-<a href="https://instagram.com/?lang=en" target="_blank">
-<i class="fa-brands fa-instagram"></i>
-</a>
-</div>
-</div>
-<div class="col-4">
-<div class="single-instagram-box">
-<img src="assets/images/instagram/instagram-img-4.jpg" alt="Image">
-<a href="https://instagram.com/?lang=en" target="_blank">
-<i class="fa-brands fa-instagram"></i>
-</a>
-</div>
-</div>
-<div class="col-4">
-<div class="single-instagram-box">
-<img src="assets/images/instagram/instagram-img-5.jpg" alt="Image">
-<a href="https://instagram.com/?lang=en" target="_blank">
-<i class="fa-brands fa-instagram"></i>
-</a>
-</div>
-</div>
-<div class="col-4">
-<div class="single-instagram-box">
-<img src="assets/images/instagram/instagram-img-6.jpg" alt="Image">
-<a href="https://instagram.com/?lang=en" target="_blank">
-<i class="fa-brands fa-instagram"></i>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-3 col-sm-6">
-<div class="single-footer-widget get-in-touch">
-<h3>Get In Touch</h3>
-<ul>
-<li>
-<i class="fa-solid fa-phone"></i>
-<span>Phone</span>
-<a href="tel:0087648484">(008) 764 8484</a>
-</li>
-<li>
-<i class="fa-solid fa-envelope"></i>
-<span>Email</span>
-<a href="../../cdn-cgi/l/email-protection.html#462e232a2a302f222b292906212b272f2a6825292b"><span class="__cf_email__" data-cfemail="cca4a9a0a0baa5a8a1a3a38caba1ada5a0e2afa3a1">[email&#160;protected]</span></a>
-</li>
-<li>
-<i class="fa-solid fa-location-dot"></i>
-<span>Address</span>
-<p>2750 Quadra Street Canada</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="shape">
-<img src="assets/images/instagram/shape.png" class="shape-1" alt="Image">
-<img src="assets/images/instagram/shape.png" class="shape-2" alt="Image">
-</div>
-</div>
-</div>
+    <div class="go-top">
+      <i data-feather="arrow-up" style="color: #fff"></i>
+    </div>
 
+    <script
+      data-cfasync="false"
+      src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+    <script src="assets/js/jquery.min.js"></script>
 
-<div class="copy-right-area">
-<div class="container">
-<p>© <span>Vidmo</span> is Proudly Owned by <a href="https://hibootstrap.com/" target="_blank">HiBoostrap</a></p>
-</div>
-</div>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
 
+    <script src="assets/js/jquery.meanmenu.js"></script>
 
-<div class="go-top">
-<i class="fa-solid fa-arrow-turn-up"></i>
-<i class="fa-solid fa-arrow-turn-up"></i>
-</div>
+    <script src="assets/js/owl.carousel.min.js"></script>
 
+    <script src="assets/js/jquery.magnific-popup.js"></script>
 
-<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/aos.js"></script>
 
-<script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/parallax.min.js"></script>
 
-<script src="assets/js/jquery.meanmenu.js"></script>
+    <script src="assets/js/odometer.min.js"></script>
 
-<script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/appear.min.js"></script>
 
-<script src="assets/js/jquery.magnific-popup.js"></script>
+    <script src="assets/js/form-validator.min.js"></script>
 
-<script src="assets/js/aos.js"></script>
+    <script src="assets/js/contact-form-script.js"></script>
 
-<script src="assets/js/parallax.min.js"></script>
+    <script src="assets/js/ajaxchimp.min.js"></script>
 
-<script src="assets/js/odometer.min.js"></script>
-
-<script src="assets/js/appear.min.js"></script>
-
-<script src="assets/js/form-validator.min.js"></script>
-
-<script src="assets/js/contact-form-script.js"></script>
-
-<script src="assets/js/ajaxchimp.min.js"></script>
-
-<script src="assets/js/custom.js"></script>
-</body>
+    <script src="assets/js/custom.js"></script>
+  </body>
 </html>
