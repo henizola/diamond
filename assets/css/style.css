@@ -6567,7 +6567,12 @@ Pricing Area Style
 .single-pricing-card.active .plan span {
   color: #111e6c;
 }
-
+.casting a {
+  color: #00afef !important;
+}
+.is-sticky .casting a {
+  color: #00afef !important;
+}
 .single-pricing-card:hover .default-btn,
 .single-pricing-card.active .default-btn {
   background: #00afef;
